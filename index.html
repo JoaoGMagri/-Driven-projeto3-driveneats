@@ -1,0 +1,154 @@
+<!--
+    Versionamento:
+        X - Versionamento usando Git é obrigatório, crie um repositório público no seu perfil do GitHub
+        X - Faça commits a cada funcionalidade implementada
+
+    Layout:
+        V - Aplicar layout para mobile, seguindo imagens fornecida (não é necessário implementar um layout para desktop)
+        V - O topo e o botão de fechar pedido devem ter posicionamento fixo e não rolar com a barra de rolagem
+        V - Você pode usar imagens e textos aleatórios para ilustrar a página, porém varie o preço em cada item da mesma categoria
+        V - As fontes utilizadas são: Righteous (nome do restaurante e títulos das categorias) e Roboto (demais textos)
+        V - Para fazer as sombras presentes em alguns elementos, pesquise sobre como aplicar sombras em CSS e brinque com os valores até ficar parecido com as imagens do layout
+        V - Para fazer os produtos rolarem horizontalmente, utilize overflow-x: scroll. No modo desktop um scroll é exibido, mas no modo celular não.
+
+    Seleção de itens:
+        X - Ao clicar sobre um item, o mesmo deve ser marcado como selecionado, seguindo layout da tela 3
+        X - Ao clicar em um item, caso já exista um item selecionado na mesma categoria, este deve ser desmarcado e o novo item clicado deve ser o novo selecionado
+        X - Ao clicar em um item já marcado, não é necessário desmarcá-lo
+
+    Botão de finalizar pedido
+        X - Por padrão, o botão de finalizar pedido deve vir desabilitado. Ao clicar no botão nesse estado, nada deve acontecer.
+        X - Quando o usuário tiver selecionado os itens das 3 categorias, o botão deve mudar para o estado de habilitado, seguindo layout da tela 5
+-->
+
+
+<!DOCTYPE> 
+<html lang="pt-br">
+    <head>
+        <title>DrivenEats</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link rel="stylesheet" href="assets\css\reset.css" />
+        <link rel="stylesheet" href="assets\css\style\style.css" />
+        <link rel="stylesheet" href="assets\css\style\menu-superior.css" />
+        <link rel="stylesheet" href="assets\css\style\corpo.css" />
+        <link rel="stylesheet" href="assets\css\style\menu-inferior.css" />
+    </head>
+
+    <body>
+        <div class="website">
+
+
+            <div class="menu-superior">
+                <h1>DrivenEats</h1>
+                <p>Sua comida em 6 minutos</p>
+            </div>
+
+
+
+            <div class="corpo">
+                
+                <div class="prato-principal">
+
+                    <h1>Primeiro, seu prato</h1>
+
+                    <div class="produtos">
+                        <div class="produto">
+                            <img src="assets\image\prato1.jpg" alt="comida">
+                            <h1>Prato feito</h1>
+                            <p>Arroz, feijão, salada e carne.</p>
+                            <h2>R$ 14,90</h2>
+                        </div>
+    
+                        <div class="produto">
+                            <img src="assets\image\prato1.jpg" alt="comida">
+                            <h1>Prato feito</h1>
+                            <p>Arroz, feijão, salada e carne.</p>
+                            <h2>R$ 15,90</h2>
+                        </div>
+    
+                        <div class="produto">
+                            <img src="assets\image\prato1.jpg" alt="comida">
+                            <h1>Prato feito</h1>
+                            <p>Arroz, feijão, salada e carne.</p>
+                            <h2>R$ 16,90</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bebida">
+                    
+                    <h1>Agora, sua bebida</h1>
+
+                    <div class="produtos">
+                        <div class="produto">
+                            <img src="assets\image\bebida1.jpg" alt="comida">
+                            <h1>Guaraná 1L</h1>
+                            <p>1 litro.</p>
+                            <h2>R$ 7,00</h2>
+                        </div>
+    
+                        <div class="produto">
+                            <img src="assets\image\bebida1.jpg" alt="comida">
+                            <h1>Guaraná 1L</h1>
+                            <p>1 litro.</p>
+                            <h2>R$ 5,00</h2>
+                        </div>
+    
+                        <div class="produto">
+                            <img src="assets\image\bebida1.jpg" alt="comida">
+                            <h1>Guaraná 1L</h1>
+                            <p>1 litro.</p>
+                            <h2>R$ 9,00</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sobremesa">
+                    
+                    <h1>Por fim, sua sobremesa</h1>
+
+                    <div class="produtos">
+                        <div class="produto">
+                            <img src="assets\image\doce1.jpg" alt="comida">
+                            <h1>Pudim</h1>
+                            <p>Apenas pudim.</p>
+                            <h2>R$ 7,90</h2>
+                        </div>
+    
+                        <div class="produto">
+                            <img src="assets\image\doce1.jpg" alt="comida">
+                            <h1>Pudim</h1>
+                            <p>Apenas pudim.</p>
+                            <h2>R$ 17,90</h2>
+                        </div>
+    
+                        <div class="produto">
+                            <img src="assets\image\doce1.jpg" alt="comida">
+                            <h1>Pudim</h1>
+                            <p>Apenas pudim.</p>
+                            <h2>R$ 14,90</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+
+            <div class="menu-inferior">
+                <div class="confirmacao-de-pedido">
+                    <p>Selecione os 3 itens para fechar o pedido</p>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <script scr="assets\js\script.js"></script>
+    </body>
+</html>

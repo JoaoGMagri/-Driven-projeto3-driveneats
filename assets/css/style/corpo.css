@@ -93,8 +93,8 @@ ion-icon {
 
 .checkpoint {
     position: absolute;
-    bottom: 25;
-    right: 25;
+    bottom: 20px;
+    right: 25px;
 
     z-index: 1;
 }

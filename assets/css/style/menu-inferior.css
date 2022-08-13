@@ -27,7 +27,10 @@
     align-items: center;
 }
 
-.confirmacao-de-pedido > p{
+.confirmacao-de-pedido > button{
+    width: 364px;
+    height: 61px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -35,9 +38,11 @@
     line-height: 23px;
     text-align: center;
 
+    border: none;
+    border-radius: 50px;
     color: #FFFFFF;
 }
 
-.pronto {
+.pronto > button{
     background-color: green;
 }

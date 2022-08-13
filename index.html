@@ -1,28 +1,4 @@
-<!--
-    Versionamento:
-        V - Versionamento usando Git é obrigatório, crie um repositório público no seu perfil do GitHub
-        V - Faça commits a cada funcionalidade implementada
-
-    Layout:
-        V - Aplicar layout para mobile, seguindo imagens fornecida (não é necessário implementar um layout para desktop)
-        V - O topo e o botão de fechar pedido devem ter posicionamento fixo e não rolar com a barra de rolagem
-        V - Você pode usar imagens e textos aleatórios para ilustrar a página, porém varie o preço em cada item da mesma categoria
-        V - As fontes utilizadas são: Righteous (nome do restaurante e títulos das categorias) e Roboto (demais textos)
-        V - Para fazer as sombras presentes em alguns elementos, pesquise sobre como aplicar sombras em CSS e brinque com os valores até ficar parecido com as imagens do layout
-        V - Para fazer os produtos rolarem horizontalmente, utilize overflow-x: scroll. No modo desktop um scroll é exibido, mas no modo celular não.
-
-    Seleção de itens:
-        V - Ao clicar sobre um item, o mesmo deve ser marcado como selecionado, seguindo layout da tela 3
-        V - Ao clicar em um item, caso já exista um item selecionado na mesma categoria, este deve ser desmarcado e o novo item clicado deve ser o novo selecionado
-        V - Ao clicar em um item já marcado, não é necessário desmarcá-lo
-
-    Botão de finalizar pedido
-        X - Por padrão, o botão de finalizar pedido deve vir desabilitado. Ao clicar no botão nesse estado, nada deve acontecer.
-        X - Quando o usuário tiver selecionado os itens das 3 categorias, o botão deve mudar para o estado de habilitado, seguindo layout da tela 5
--->
-
-
-<!DOCTYPE> 
+<!DOCTYPE html> 
 <html lang="pt-br">
     <head>
         <title>DrivenEats</title>
@@ -65,9 +41,9 @@
                         </div>
     
                         <div class="produto Galinhada esconderPrato" onclick="selecionadoComida(this)">
-                            <img src="assets\image\prato1.jpg" alt="comida">
+                            <img src="assets\image\prato2.jpg" alt="comida">
                             <h1>Galinhada</h1>
-                            <p>Arroz, feijão, salada e carne.</p>
+                            <p>Galinhada estilo da vovó.</p>
                             <h2>R$ 15,90</h2>
                             <div class="checkpoint">
                                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
@@ -75,9 +51,9 @@
                         </div>
     
                         <div class="produto Feijoada esconderPrato" onclick="selecionadoComida(this)">
-                            <img src="assets\image\prato1.jpg" alt="comida">
+                            <img src="assets\image\prato3.jpeg" alt="comida">
                             <h1>Feijoada</h1>
-                            <p>Arroz, feijão, salada e carne.</p>
+                            <p>Acompanha farinha e salda.</p>
                             <h2>R$ 16,90</h2>
                             <div class="checkpoint">
                                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
@@ -95,7 +71,7 @@
                         <div class="produto esconderBebida" onclick="selecionadoBebida(this)">
                             <img src="assets\image\bebida1.jpg" alt="comida">
                             <h1>Guaraná Lata</h1>
-                            <p>1 litro.</p>
+                            <p>350ml.</p>
                             <h2>R$ 7,00</h2>
                             <div class="checkpoint">
                                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
@@ -103,7 +79,7 @@
                         </div>
     
                         <div class="produto esconderBebida" onclick="selecionadoBebida(this)">
-                            <img src="assets\image\bebida1.jpg" alt="comida">
+                            <img src="assets\image\bebida2.jpg" alt="comida">
                             <h1>Guaraná 1L</h1>
                             <p>1 litro.</p>
                             <h2>R$ 5,00</h2>
@@ -113,9 +89,9 @@
                         </div>
     
                         <div class="produto esconderBebida" onclick="selecionadoBebida(this)">
-                            <img src="assets\image\bebida1.jpg" alt="comida">
+                            <img src="assets\image\bebida3.jpg" alt="comida">
                             <h1>Guaraná 1,5L</h1>
-                            <p>1 litro.</p>
+                            <p>1,5 litro.</p>
                             <h2>R$ 9,00</h2>
                             <div class="checkpoint">
                                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
@@ -133,7 +109,7 @@
                         <div class="produto esconderSobremesa" onclick="selecionadoSobremesa(this)">
                             <img src="assets\image\doce1.jpg" alt="comida">
                             <h1>Brigadeiro colher</h1>
-                            <p>Apenas pudim.</p>
+                            <p>Apenas brigadeiro.</p>
                             <h2>R$ 7,90</h2>
                             <div class="checkpoint">
                                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
@@ -141,9 +117,9 @@
                         </div>
     
                         <div class="produto esconderSobremesa" onclick="selecionadoSobremesa(this)">
-                            <img src="assets\image\doce1.jpg" alt="comida">
+                            <img src="assets\image\doce2.jpg" alt="comida">
                             <h1>Brigadeiro copo</h1>
-                            <p>Apenas pudim.</p>
+                            <p>Apenas brigadeiro num copo.</p>
                             <h2>R$ 9,90</h2>
                             <div class="checkpoint">
                                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
@@ -151,7 +127,7 @@
                         </div>
     
                         <div class="produto esconderSobremesa" onclick="selecionadoSobremesa(this)">
-                            <img src="assets\image\doce1.jpg" alt="comida">
+                            <img src="assets\image\doce3.jpg" alt="comida">
                             <h1>Pudim</h1>
                             <p>Apenas pudim.</p>
                             <h2>R$ 14,90</h2>
@@ -169,10 +145,9 @@
 
             <div class="menu-inferior">
                 <div class="confirmacao-de-pedido" onclick="fechar()">
-                    <p>Selecione os 3 itens para fechar o pedido</p>
+                    <button>Selecione os 3 itens para fechar o pedido</button>
                 </div>
             </div>
-
 
         </div>
         

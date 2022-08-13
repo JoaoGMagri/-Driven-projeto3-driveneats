@@ -1,7 +1,7 @@
 <!--
     Versionamento:
-        X - Versionamento usando Git é obrigatório, crie um repositório público no seu perfil do GitHub
-        X - Faça commits a cada funcionalidade implementada
+        V - Versionamento usando Git é obrigatório, crie um repositório público no seu perfil do GitHub
+        V - Faça commits a cada funcionalidade implementada
 
     Layout:
         V - Aplicar layout para mobile, seguindo imagens fornecida (não é necessário implementar um layout para desktop)
@@ -12,9 +12,9 @@
         V - Para fazer os produtos rolarem horizontalmente, utilize overflow-x: scroll. No modo desktop um scroll é exibido, mas no modo celular não.
 
     Seleção de itens:
-        X - Ao clicar sobre um item, o mesmo deve ser marcado como selecionado, seguindo layout da tela 3
-        X - Ao clicar em um item, caso já exista um item selecionado na mesma categoria, este deve ser desmarcado e o novo item clicado deve ser o novo selecionado
-        X - Ao clicar em um item já marcado, não é necessário desmarcá-lo
+        V - Ao clicar sobre um item, o mesmo deve ser marcado como selecionado, seguindo layout da tela 3
+        V - Ao clicar em um item, caso já exista um item selecionado na mesma categoria, este deve ser desmarcado e o novo item clicado deve ser o novo selecionado
+        V - Ao clicar em um item já marcado, não é necessário desmarcá-lo
 
     Botão de finalizar pedido
         X - Por padrão, o botão de finalizar pedido deve vir desabilitado. Ao clicar no botão nesse estado, nada deve acontecer.
@@ -53,26 +53,35 @@
 
                     <h1>Primeiro, seu prato</h1>
 
-                    <div class="produtos">
-                        <div class="produto">
+                    <div class="produtosPrato">
+                        <div class="produto Pratofeito esconderPrato" onclick="selecionadoComida(this)">
                             <img src="assets\image\prato1.jpg" alt="comida">
                             <h1>Prato feito</h1>
                             <p>Arroz, feijão, salada e carne.</p>
                             <h2>R$ 14,90</h2>
+                            <div class="checkpoint">
+                                <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                            </div>
                         </div>
     
-                        <div class="produto">
+                        <div class="produto Galinhada esconderPrato" onclick="selecionadoComida(this)">
                             <img src="assets\image\prato1.jpg" alt="comida">
-                            <h1>Prato feito</h1>
+                            <h1>Galinhada</h1>
                             <p>Arroz, feijão, salada e carne.</p>
                             <h2>R$ 15,90</h2>
+                            <div class="checkpoint">
+                                <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                            </div>
                         </div>
     
-                        <div class="produto">
+                        <div class="produto Feijoada esconderPrato" onclick="selecionadoComida(this)">
                             <img src="assets\image\prato1.jpg" alt="comida">
-                            <h1>Prato feito</h1>
+                            <h1>Feijoada</h1>
                             <p>Arroz, feijão, salada e carne.</p>
                             <h2>R$ 16,90</h2>
+                            <div class="checkpoint">
+                                <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                            </div>
                         </div>
                     </div>
 
@@ -82,26 +91,35 @@
                     
                     <h1>Agora, sua bebida</h1>
 
-                    <div class="produtos">
-                        <div class="produto">
+                    <div class="produtoBebida">
+                        <div class="produto esconderBebida" onclick="selecionadoBebida(this)">
                             <img src="assets\image\bebida1.jpg" alt="comida">
-                            <h1>Guaraná 1L</h1>
+                            <h1>Guaraná Lata</h1>
                             <p>1 litro.</p>
                             <h2>R$ 7,00</h2>
+                            <div class="checkpoint">
+                                <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                            </div>
                         </div>
     
-                        <div class="produto">
+                        <div class="produto esconderBebida" onclick="selecionadoBebida(this)">
                             <img src="assets\image\bebida1.jpg" alt="comida">
                             <h1>Guaraná 1L</h1>
                             <p>1 litro.</p>
                             <h2>R$ 5,00</h2>
+                            <div class="checkpoint">
+                                <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                            </div>
                         </div>
     
-                        <div class="produto">
+                        <div class="produto esconderBebida" onclick="selecionadoBebida(this)">
                             <img src="assets\image\bebida1.jpg" alt="comida">
-                            <h1>Guaraná 1L</h1>
+                            <h1>Guaraná 1,5L</h1>
                             <p>1 litro.</p>
                             <h2>R$ 9,00</h2>
+                            <div class="checkpoint">
+                                <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                            </div>
                         </div>
                     </div>
 
@@ -111,26 +129,35 @@
                     
                     <h1>Por fim, sua sobremesa</h1>
 
-                    <div class="produtos">
-                        <div class="produto">
+                    <div class="produtaSobremesa">
+                        <div class="produto esconderSobremesa" onclick="selecionadoSobremesa(this)">
                             <img src="assets\image\doce1.jpg" alt="comida">
-                            <h1>Pudim</h1>
+                            <h1>Brigadeiro colher</h1>
                             <p>Apenas pudim.</p>
                             <h2>R$ 7,90</h2>
+                            <div class="checkpoint">
+                                <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                            </div>
                         </div>
     
-                        <div class="produto">
+                        <div class="produto esconderSobremesa" onclick="selecionadoSobremesa(this)">
                             <img src="assets\image\doce1.jpg" alt="comida">
-                            <h1>Pudim</h1>
+                            <h1>Brigadeiro copo</h1>
                             <p>Apenas pudim.</p>
-                            <h2>R$ 17,90</h2>
+                            <h2>R$ 9,90</h2>
+                            <div class="checkpoint">
+                                <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                            </div>
                         </div>
     
-                        <div class="produto">
+                        <div class="produto esconderSobremesa" onclick="selecionadoSobremesa(this)">
                             <img src="assets\image\doce1.jpg" alt="comida">
                             <h1>Pudim</h1>
                             <p>Apenas pudim.</p>
                             <h2>R$ 14,90</h2>
+                            <div class="checkpoint">
+                                <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                            </div>
                         </div>
                     </div>
 
@@ -141,7 +168,7 @@
 
 
             <div class="menu-inferior">
-                <div class="confirmacao-de-pedido">
+                <div class="confirmacao-de-pedido" onclick="fechar()">
                     <p>Selecione os 3 itens para fechar o pedido</p>
                 </div>
             </div>
@@ -149,6 +176,7 @@
 
         </div>
         
-        <script scr="assets\js\script.js"></script>
+        <script src="assets\js\script.js"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     </body>
 </html>
